@@ -4,6 +4,9 @@ html { box-sizing: border-box; }
 
 body {
     text-rendering: optimizeLegibility;
+    background-color: #f5f5f5;
+    font-family: 'Rubik', sans-serif;
+
 }
 
 /*
@@ -21,3 +24,149 @@ body {
 */
 
 /* ----- zde zacni psat vlastni css ----- */
+
+.kontejner {
+    display: flex;
+    width: 670px;
+    height: 440px;
+    position: relative;
+    border-radius: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+
+}
+
+.section {
+    padding: 30px;
+}
+
+.bota {
+    flex-shrink: 0;
+}
+
+/* leva polovina */
+
+.obrazek {
+    padding: 30px;
+    flex-basis: 50%;
+    flex-grow: 1;
+    border-radius: 2% 0 0 2%;
+    background-size: cover;
+    background-image: linear-gradient(#06d7c1, #50cc49);
+
+}
+
+.obrazek p {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    margin: 30px 0 0 0;
+}
+
+.teniska {
+    position: absolute; top: 140px; left: -80px;
+
+}
+
+.cena {
+    color: white;
+    font-size: 28px;
+    font-weight: 500;
+    position: absolute; right: 365px; bottom: 50px;
+}
+
+.zaruka {
+    color: white;
+    font-size: 12px;
+    font-weight: 400;
+    position: absolute; right: 365px; bottom: 30px;
+}
+
+
+/* konec leve poloviny */
+
+/* prava polovina */
+
+.popis {
+    padding: 30px; 
+    flex-grow: 1;
+    flex-basis: 50%;
+    background-color: white;
+    border-radius: 0 2% 2% 0;
+}
+
+h1 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.odstavec {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.prvni {
+    color: #959595;
+    margin: 6px 0 0 0;
+}
+
+.druhy {
+    border-bottom: 1.5px solid #06d7c1;
+    padding: 30px 0;
+    margin: 0;
+}
+
+/* stylování listu velikostí */
+
+h2 {
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin-top: 30px;
+
+}
+
+li {
+    display: inline;
+}
+
+.kontejner2 {
+    display: flex;
+}
+
+.kontejner2 li {
+    flex-basis: 16%;
+    font-size: 14px;
+}
+
+ul {
+    padding-left: 10px;
+}
+
+/* velikost 38 */
+
+span {
+    color: #f15f42;
+    font-weight: 500;
+    border: 1.5px solid #f15f42;
+    border-radius: 50%;
+    padding: 4px;
+}
+
+/* odkaz do košíku */
+
+.dokosiku {
+    font-size: 14px;
+    font-weight: 400;
+    color: white;
+    background-color: #f15f42;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 7px;
+    padding: 13px 31px;
+    position: absolute; right: 166px; bottom: 30px;
+    
+}
