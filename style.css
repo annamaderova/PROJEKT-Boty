@@ -43,6 +43,7 @@ body {
 
 .bota {
     flex-shrink: 0;
+    flex-grow: 1;
 }
 
 /* leva polovina */
@@ -121,6 +122,7 @@ h1 {
 
 /* stylování listu velikostí */
 
+
 h2 {
     font-size: 14px;
     font-weight: 500;
@@ -129,8 +131,8 @@ h2 {
 
 }
 
-li {
-    display: inline;
+ul {
+    padding-left: 10px;
 }
 
 .kontejner2 {
@@ -138,15 +140,17 @@ li {
 }
 
 .kontejner2 li {
-    flex-basis: 16%;
+
     font-size: 14px;
+    flex-grow: 1;
+    display: inline-block;
 }
 
-ul {
-    padding-left: 10px;
-}
+/* výběr velikosti */
 
-/* velikost 38 */
+li:hover {
+    font-weight: 500;
+}
 
 span {
     color: #f15f42;
